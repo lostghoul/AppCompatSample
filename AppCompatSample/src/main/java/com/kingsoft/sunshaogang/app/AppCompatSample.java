@@ -2,6 +2,7 @@ package com.kingsoft.sunshaogang.app;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -32,6 +33,7 @@ public class AppCompatSample extends ActionBarActivity {
         // Handle action buttons
         switch(item.getItemId()) {
             case R.id.action_websearch:
+                Log.e("ssg", "start web search page");
                 // create intent to perform web search for this planet
 //                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
 //                intent.putExtra(SearchManager.QUERY, getSupportActionBar().getTitle());
@@ -43,6 +45,7 @@ public class AppCompatSample extends ActionBarActivity {
 //                }
                 return true;
             case R.id.action_settings:
+                Log.e("ssg", "start setting page");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

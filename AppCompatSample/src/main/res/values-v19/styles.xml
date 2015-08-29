@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TransparencyDemo" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!--<style name="FullBleedTheme" parent="android:Theme.Holo.Light.NoActionBar">-->
+    <!--&lt;!&ndash; API 14 theme customizations can go here. &ndash;&gt;-->
+    <!--</style>-->
+    <style name="FullBleedTheme" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+        <!-- API 19 theme customizations can go here. -->
+    </style>
+    <!--<style name="AppThemeToolbar" parent="@style/Theme.AppCompat.NoActionBar">-->
+    <!--<item name="colorPrimary">#2196F3</item>-->
+    <!--<item name="colorPrimaryDark">#2196F3</item>-->
+    <!--&lt;!&ndash;<item name="colorPrimaryDark">#1565C0</item>&ndash;&gt;-->
+    <!--<item name="colorAccent">#E91E63</item>-->
+    <!--</style>-->
+</resources>
