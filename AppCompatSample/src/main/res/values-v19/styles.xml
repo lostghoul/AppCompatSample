@@ -17,4 +17,11 @@
     <!--&lt;!&ndash;<item name="colorPrimaryDark">#1565C0</item>&ndash;&gt;-->
     <!--<item name="colorAccent">#E91E63</item>-->
     <!--</style>-->
+    <style name="ActionBarTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="ActionBarStyle" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/red</item>
+    </style>
 </resources>
