@@ -24,16 +24,39 @@ public class AppCompatSample extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        // The action bar home/up action should open or close the drawer.
+        // ActionBarDrawerToggle will take care of this.
+//        if (mDrawerToggle.onOptionsItemSelected(item)) {
+//            return true;
+//        }
+        // Handle action buttons
+        switch(item.getItemId()) {
+            case R.id.action_websearch:
+                // create intent to perform web search for this planet
+//                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+//                intent.putExtra(SearchManager.QUERY, getSupportActionBar().getTitle());
+//                // catch event that there's no activity to handle intent
+//                if (intent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(intent);
+//                } else {
+//                    Toast.makeText(this, R.string.app_not_available, Toast.LENGTH_LONG).show();
+//                }
+                return true;
+            case R.id.action_settings:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
     }
 }
